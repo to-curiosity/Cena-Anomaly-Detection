@@ -48,19 +48,19 @@ func fhe_mat_mult(client_values, server_values [][]float64, server_bias0 []float
 		panic(err)
 	}
 
-	// Key Generator
+	// Key Generator: Happens at client
 	kgen := rlwe.NewKeyGenerator(params)
 
-	// Secret Key
+	// Secret Key: Stays with the client
 	sk := kgen.GenSecretKeyNew()
 
-	// Secret Key
+	// Public Key: Get's sent to the server
 	pk := kgen.GenPublicKeyNew(sk)
 
 	// Encoder
 	ecd := hefloat.NewEncoder(params)
 
-	// RelinearizationKey: an evaluation key which is used during ciphertext x ciphertext multiplication to ensure ciphertext compactness.
+	// RelinearizationKey: Get's sent to the server
 	rlk := kgen.GenRelinearizationKeyNew(sk)
 
 	// Encryptor
