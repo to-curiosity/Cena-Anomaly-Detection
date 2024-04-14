@@ -22,6 +22,7 @@ Privacy Preserving Anomaly Detection using FHE
 6. [Usage and Modifications](#usage-and-modifications-fhe-stuffs)
 7. [Security Considerations](#security-considerations)
 8. [Run Code](#run-code)
+9. [TODO](#todo)
 
 
 ## Overview anomaly detection autoencoder: 
@@ -91,3 +92,6 @@ This code uses the hefloat and RLWE modules in the Lattigo v5 library. The code 
 ## Run code:
 - *NOTE:* If the autoencoder_weights.gob file exists, then the code will not retrain the model. Model weights and bias' within "autoencoder_weights.gob" will be used instead.
 - Run command line --> go run anomalyDetection_autoEncoder.go fhe_stuffs.go
+
+## TODO:
+- Split out the code into client and server files to show explicitly who's responsible specific operations and transfer of keys and data
