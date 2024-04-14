@@ -94,4 +94,5 @@ This code uses the hefloat and RLWE modules in the Lattigo v5 library. The code 
 - Run command line --> go run anomalyDetection_autoEncoder.go fhe_stuffs.go
 
 ## TODO:
-- Split out the code into client and server files to show explicitly who's responsible for specific operations and transfer of keys and data
+- Split out the code into client and server files to show explicitly who's responsible for specific operations and transfer of keys and data.
+- I suspect implement the model in Python with TensorFlow/Keras is easier for development and wider accessibility. Training the model and saving the weights can be done. Then, perform the forward pass and inference using Go and the Lattigo library for secure and efficient execution of the pre-trained model.
