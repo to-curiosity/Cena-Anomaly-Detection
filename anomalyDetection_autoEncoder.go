@@ -179,7 +179,7 @@ type DataSet struct {
 func main() {
 	var start time.Time
 
-	//rand.Seed(42)
+	rand.Seed(42)
 	// Load train and validation datasets from CSV files
 	trainData, err := loadDataFromCSV("./data/SPECTF_train.csv")
 	if err != nil {
