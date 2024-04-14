@@ -94,4 +94,4 @@ This code uses the hefloat and RLWE modules in the Lattigo v5 library. The code 
 - Run command line --> go run anomalyDetection_autoEncoder.go fhe_stuffs.go
 
 ## TODO:
-- Split out the code into client and server files to show explicitly who's responsible specific operations and transfer of keys and data
+- Split out the code into client and server files to show explicitly who's responsible for specific operations and transfer of keys and data
