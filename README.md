@@ -2,8 +2,8 @@
 Privacy Preserving Anomaly Detection using FHE
 
 # Table of Contents
-1. [Overview: anomalyDetection_autoEncoder.go](#overview-(anomalydetection_autoencoder.go))
-2. [Key Components](#key-components)
+1. [Overview: anomalyDetection_autoEncoder.go](#overview-anomaly-detection-autoencoder)
+2. [Key Components](#key-components-anomaly-detection-autoencoder)
    - [Data Loading](#data-loading)
    - [Data Preprocessing](#data-preprocessing)
    - [Autoencoder Model](#autoencoder-model)
@@ -12,21 +12,21 @@ Privacy Preserving Anomaly Detection using FHE
    - [Evaluation Metrics](#evaluation-metrics)
    - [Saving and Loading Weights](#saving-and-loading-weights)
 3. [Usage and Modifications](#usage-and-modifications)
-4. [Overview](#overview-(fhe_stuffs.go))
-5. [Key Components](#key-components)
+4. [Overview](#overview-fhe-stuffs)
+5. [Key Components](#key-components-fhe-stuffs)
    - [Parameter Initialization](#parameter-initialization)
    - [Key Generation](#key-generation)
    - [Encryption Process](#encryption-process)
    - [Homomorphic Operations](#homomorphic-operations)
    - [Decryption and Decoding](#decryption-and-decoding)
-6. [Usage and Modifications](#usage-and-modifications)
+6. [Usage and Modifications](#usage-and-modifications-fhe-stuffs)
 7. [Security Considerations](#security-considerations)
 
 
-## Overview (anomalyDetection_autoEncoder.go): 
+## Overview anomaly detection autoencoder: 
 - The code implements an autoencoder-based anomaly detection system for cardiac Single Proton Emission Computed Tomography (SPECT) images. The autoencoder is trained using normal data and is then used to detect anomalies by comparing the reconstruction loss with a predefined threshold.
 
-## Key Components:
+## Key Components anomaly detection autoencoder:
 ### Data Loading:
 - The code loads the training and validation datasets from CSV files (SPECTF_train.csv and SPECTF_test.csv).
 - Each data point consists of features and a label indicating whether it is normal (label=1) or anomalous (label=0).
@@ -60,10 +60,10 @@ Privacy Preserving Anomaly Detection using FHE
 - Run the code to train the autoencoder and perform anomaly detection on the validation dataset.
 - The code will output the evaluation metrics and provide predictions for normal and anomalous data points.
 
-## Overview (fhe_stuffs.go): 
+## Overview fhe stuffs: 
 This code uses the hefloat and RLWE modules in the Lattigo v5 library. The code demonstrates fully homomorphic encryption (FHE) operations, particularly focusing on the encryption, multiplication, and decryption of matrices. The operations are implemented within the context of securely processing data using homomorphic techniques, which allow computations on encrypted data without needing to decrypt it first. The example provided illustrates matrix multiplication between two encrypted matrices.
 
-## Key Components:
+## Key Components fhe stuffs:
 ### Parameter Initialization:
 - The code sets up FHE parameters tailored for a specific security level and operational efficiency, including parameters for the polynomial ring degree (LogN), ciphertext modulus (LogQ), auxiliary modulus (LogP), and the default scaling factor (LogDefaultScale).
 
@@ -79,7 +79,7 @@ This code uses the hefloat and RLWE modules in the Lattigo v5 library. The code 
 ### Decryption and Decoding:
 - The result of the FHE operations is decrypted and decoded back into readable floating-point numbers. The code also includes scaling the resulting matrix to adjust for precision lost during encryption and multiplication.
 
-## Usage and Modifications:
+## Usage and Modifications fhe stuffs:
 - The code is designed for educational and experimental purposes, showcasing how matrix operations can be securely executed on encrypted data.
 - Users can modify the matrix dimensions, scaling factors, and FHE parameters based on the security requirements and computational resources available.
 - The inclusion of performance timing helps in understanding the computational cost and could guide optimizations such as parameter tuning or parallelization.
