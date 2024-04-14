@@ -89,5 +89,5 @@ This code uses the hefloat and RLWE modules in the Lattigo v5 library. The code 
 - The example sets specific parameters that determine the security and efficiency of the encryption. Adjusting these parameters can impact both the security level of the operations and the computational overhead involved.
 
 ## Run code:
--* If the autoencoder_weights.gob file exists0, then the code will not retrain the model. Model weights and bias' within "autoencoder_weights.gob" will be used instead.
+- *NOTE:* If the autoencoder_weights.gob file exists, then the code will not retrain the model. Model weights and bias' within "autoencoder_weights.gob" will be used instead.
 - Run command line --> go run anomalyDetection_autoEncoder.go fhe_stuffs.go
