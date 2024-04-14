@@ -1,4 +1,4 @@
-module cina_modules
+module cena_modules
 
 go 1.18
 
