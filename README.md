@@ -12,7 +12,7 @@ Privacy Preserving Anomaly Detection using FHE
    - [Evaluation Metrics](#evaluation-metrics)
    - [Saving and Loading Weights](#saving-and-loading-weights)
 3. [Usage and Modifications](#usage-and-modifications)
-4. [Overview](#overview-fhe-stuffs)
+4. [Overview: fhe_stuffs.go](#overview-fhe-stuffs)
 5. [Key Components](#key-components-fhe-stuffs)
    - [Parameter Initialization](#parameter-initialization)
    - [Key Generation](#key-generation)
@@ -21,6 +21,7 @@ Privacy Preserving Anomaly Detection using FHE
    - [Decryption and Decoding](#decryption-and-decoding)
 6. [Usage and Modifications](#usage-and-modifications-fhe-stuffs)
 7. [Security Considerations](#security-considerations)
+8. [Run Code](#run-code)
 
 
 ## Overview anomaly detection autoencoder: 
@@ -86,3 +87,6 @@ This code uses the hefloat and RLWE modules in the Lattigo v5 library. The code 
 
 ## Security Considerations:
 - The example sets specific parameters that determine the security and efficiency of the encryption. Adjusting these parameters can impact both the security level of the operations and the computational overhead involved.
+
+## Run code:
+- $ go run anomalyDetection_autoEncoder.go fhe_stuffs.go
