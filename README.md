@@ -2,7 +2,7 @@
 Privacy Preserving Anomaly Detection using FHE
 
 # Table of Contents
-1. [Overview: anomalyDetection_autoEncoder.go](#overview)
+1. [Overview: anomalyDetection_autoEncoder.go](#overview-(anomalydetection_autoencoder.go))
 2. [Key Components](#key-components)
    - [Data Loading](#data-loading)
    - [Data Preprocessing](#data-preprocessing)
@@ -12,16 +12,15 @@ Privacy Preserving Anomaly Detection using FHE
    - [Evaluation Metrics](#evaluation-metrics)
    - [Saving and Loading Weights](#saving-and-loading-weights)
 3. [Usage and Modifications](#usage-and-modifications)
-4. [Overview: fhe_stuffs.go](#overview)
+4. [Overview](#overview-(fhe_stuffs.go))
 5. [Key Components](#key-components)
-   - [Data Loading](#data-loading)
-   - [Data Preprocessing](#data-preprocessing)
-   - [Autoencoder Model](#autoencoder-model)
-   - [Training](#training)
-   - [Anomaly Detection](#anomaly-detection)
-   - [Evaluation Metrics](#evaluation-metrics)
-   - [Saving and Loading Weights](#saving-and-loading-weights)
+   - [Parameter Initialization](#parameter-initialization)
+   - [Key Generation](#key-generation)
+   - [Encryption Process](#encryption-process)
+   - [Homomorphic Operations](#homomorphic-operations)
+   - [Decryption and Decoding](#decryption-and-decoding)
 6. [Usage and Modifications](#usage-and-modifications)
+7. [Security Considerations](#security-considerations)
 
 
 ## Overview (anomalyDetection_autoEncoder.go): 
